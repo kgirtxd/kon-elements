@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<description>
+		<div element="ID_WOTC_ERLW_CLASS_ARTIFICER" />
+	</description>
+	<element name="Artificer" type="Class" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_ARTIFICER">
+		<setters>
+			<set name="short">HERE</set>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Class" id="ID_WOTC_ERLW_CLASS_ARTIFICER" />
+		</rules>
+	</element>
+
+	<element name="Enhanced Arcane Focus" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_TCOE_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_ENHANCED_ARCANE_FOCUS">
+		<supports>Artificer Infusion</supports>
+		<description>
+			<div element="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_ENHANCED_ARCANE_FOCUS" />
+		</description>
+		<rules>
+			<grant type="Class" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_ENHANCED_ARCANE_FOCUS" />
+		</rules>
+
+		<!--<description>
+			<p><em>Item: A rod, staff, or wand (requires attunement)</em></p>
+			<p>While holding this item, a creature gains a +1 bonus to spell attack rolls. In addition, the creature ignores half cover when making a spell attack.</p>
+			<p class="indent">The bonus increases to +2 when you reach 10th level in this class.</p>
+		</description>
+		<sheet>
+			<description>You can infuse a rod, staff, or wand into an enhanced arcane focus.</description>
+			 <description>Item: A rod, staff, or wand (requires attunement)
+			While holding this item, a creature gains a +1 bonus to spell attack rolls. In addition, the creature ignores half cover when making a spell attack.</description>
+			<description level="10">Item: A rod, staff, or wand (requires attunement)
+			While holding this item, a creature gains a +2 bonus to spell attack rolls. In addition, the creature ignores half cover when making a spell attack.</description> 
+		</sheet>-->
+	</element>
+
+
+
+
+
+
+
+
+
+
+</elements>
