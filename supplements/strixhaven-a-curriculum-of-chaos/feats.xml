@@ -354,7 +354,7 @@
 		<rules>
 			<stat name="companion:ac" value="11" bonus="base" />
 			<stat name="companion:hp:max" value="18" />
-			<stat name="companion:speed" value="30" bonus="base" />	
+			<stat name="companion:speed" value="30" bonus="base" />
 			<stat name="companion:performance:proficiency" value="companion:proficiency" bonus="base" />
 		</rules>
 	</element>
@@ -423,7 +423,7 @@
 		<rules>
 			<stat name="companion:ac" value="12" bonus="base" />
 			<stat name="companion:hp:max" value="27" />
-			<stat name="companion:speed" value="30" bonus="base" />	
+			<stat name="companion:speed" value="30" bonus="base" />
 		</rules>
 	</element>
 	<element name="Relative Density" type="Companion Trait" source="Strixhaven: A Curriculum Of Chaos" id="ID_WOTC_SCOC_COMPANION_TRAIT_FRACTAL_MASCOT_RELATIVE_DENSITY">
