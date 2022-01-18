@@ -24,7 +24,7 @@
 		<setters>
 			<set name="abbreviation">WBW</set>
 			<set name="url">https://dnd.wizards.com/products/wild-beyond-witchlight</set>
-			<set name="image">https://media.dnd.wizards.com/styles/products_thumbnail/public/images/product/972ihxi2hx9_TH.png</set>
+			<set name="image">https://assets-prd.ignimgs.com/2021/06/06/twbtw-bothcovers-1623014646892.jpg</set>
 			<set name="author" abbreviation="WOTC" url="http://dnd.wizards.com">Wizards of the Coast</set>
 			<set name="official">true</set>
 			<set name="supplement">true</set>

@@ -4,7 +4,7 @@
 		<name>Items</name>
 		<description>The Items from Tasha’s Cauldron of Everything</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/tashas-cauldron-everything">Tasha’s Cauldron of Everything</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="items.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/tashas-cauldron-of-everything/items.xml" />
 		</update>
 	</info>
@@ -1615,6 +1615,189 @@
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Artifact</set>
 			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<!-- infused items -->
+	<element name="Boots of the Winding Path" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_INFUSION_BOOTS_OF_THE_WINDING_PATH">
+		<description>
+			<p>While wearing these boots, a creature can teleport up to 15 feet as a bonus action to an unoccupied space the creature can see. The creature must have occupied that space at some point during the current turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">artificer infusion,teleport,bonus action</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Artificer Infusion</set>
+			<set name="slot">misc</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Enhanced Arcane Rod, +1" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_INFUSION_ENHANCED_ARCANE_FOCUS_1">
+		<description>
+			<p>While holding this rod, a creature gains a +1 bonus to spell attack rolls. In addition, the creature ignores half cover when making a spell attack.</p>
+		</description>
+		<setters>
+			<set name="keywords">artificer infusion</set>
+			<set name="category">Rods</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type" addition="artificer infusion">Rod</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="1" />
+		</rules>
+	</element>
+	<element name="Enhanced Arcane Rod, +2" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_INFUSION_ENHANCED_ARCANE_FOCUS_2">
+		<description>
+			<p>While holding this rod, a creature gains a +2 bonus to spell attack rolls. In addition, the creature ignores half cover when making a spell attack.</p>
+		</description>
+		<setters>
+			<set name="keywords">artificer infusion</set>
+			<set name="category">Rods</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type" addition="artificer infusion">Rod</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="2" />
+		</rules>
+	</element>	
+	<element name="Enhanced Arcane Wand, +1" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_ENHANCED_WAND_1">
+		<description>
+			<p>While holding this wand, a creature gains a +1 bonus to spell attack rolls. In addition, the creature ignores half cover when making a spell attack.</p>
+		</description>
+		<setters>
+			<set name="keywords">artificer infusion</set>
+			<set name="category">Wands</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type" addition="artificer infusion">Wand</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="1" />
+		</rules>
+	</element>
+	<element name="Enhanced Arcane Wand, +2" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_ENHANCED_WAND_2">
+		<description>
+			<p>While holding this wand, a creature gains a +2 bonus to spell attack rolls. In addition, the creature ignores half cover when making a spell attack.</p>
+		</description>
+		<setters>
+			<set name="keywords">artificer infusion</set>
+			<set name="category">Wands</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type" addition="artificer infusion">Wand</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="2" />
+		</rules>
+	</element>
+	<element name="Enhanced Arcane Staff, +1" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_ENHANCED_ARCANE_STAFF_1">
+		<description>
+			<p>While holding this staff, a creature gains a +1 bonus to spell attack rolls. In addition, the creature ignores half cover when making a spell attack.</p>
+		</description>
+		<setters>
+			<set name="category">Staffs</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type" addition="artificer infusion">Staff</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="1" />
+		</rules>
+	</element>
+	<element name="Enhanced Arcane Staff, +2" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_ENHANCED_ARCANE_STAFF_2">
+		<description>
+			<p>While holding this staff, a creature gains a +2 bonus to spell attack rolls. In addition, the creature ignores half cover when making a spell attack.</p>
+		</description>
+		<setters>
+			<set name="category">Staffs</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type" addition="artificer infusion">Staff</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="2" />
+		</rules>
+	</element>
+	<element name="Radiant Weapon" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_INFUSION_RADIANT_WEAPON">
+		<description>
+			<p>This magic weapon grants a +1 bonus to attack and damage rolls made with it. While holding it, the wielder can take a bonus action to cause it to shed bright light in a 30-foot radius and dim light for an additional 30 feet. The wielder can extinguish the light as a bonus action.</p>
+			<p class="indent">The weapon has 4 charges. As a reaction immediately after being hit by an attack, the wielder can expend 1 charge and cause the attacker to be blinded until the end of the attacker’s next turn, unless the attacker succeeds on a Constitution saving throw against your spell save DC. The weapon regains 1d4 expended charges daily at dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">artificer infusion</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="simple or martial weapon">Weapon</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="enhancement">1</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Radiant {{parent}} +{{enhancement}}</set>
+			<set name="charges">4</set>
+		</setters>
+	</element>
+	<element name="Repeating Shot" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_INFUSION_REPEATING_SHOT">
+		<description>
+			<p>This magic weapon grants a +1 bonus to attack and damage rolls made with it when it’s used to make a ranged attack, and it ignores the loading property if it has it.
+			If you load no ammunition in the weapon, it produces its own, automatically creating one piece of magic ammunition when you make a ranged attack with it. The ammunition created by the weapon vanishes the instant after it hits or misses a target.</p>
+		</description>
+		<setters>
+			<set name="keywords">artificer infusion</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="a simple or martial weapon with the ammunition property">Weapon</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="enhancement">1</set>
+			<set name="attunement">true</set>
+			<set name="weapon">(ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED),(ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION||ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION)</set>
+			<set name="name-format">Repeating {{parent}} +{{enhancement}}</set>
+		</setters>
+	</element>
+	<element name="Repulsion Shield" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_SHIELD_REPULSION_SHIELD">
+		<description>
+			<p>A creature gains a +1 bonus to Armor Class while wielding this shield.</p>
+			<p class="indent">The shield has 4 charges. While holding it, the wielder can use a reaction immediately after being hit by a melee attack to expend 1 of the shield’s charges and push the attacker up to 15 feet away. The shield regains 1d4 expended charges daily at dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">artificer infusion</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp" override="false">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">1</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">Repulsion Shield +{{enhancement}}</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+	<element name="Returning Weapon" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_INFUSION_RETURNING_WEAPON">
+		<description>
+			<p>This magic weapon grants a +1 bonus to attack and damage rolls made with it, and it returns to the wielder’s hand immediately after it is used to make a ranged attack.</p>
+		</description>
+		<setters>
+			<set name="keywords">artificer infusion</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="a simple or martial weapon with the thrown property">Weapon</set>
+			<set name="rarity">Artificer Infusion</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">(ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED),ID_INTERNAL_WEAPON_PROPERTY_THROWN</set>
+			<set name="name-format">Returning {{parent}} +{{enhancement}}</set>
 		</setters>
 	</element>
   

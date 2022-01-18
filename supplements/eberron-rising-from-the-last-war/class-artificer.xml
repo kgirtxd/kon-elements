@@ -125,7 +125,7 @@
 		</rules>
 		<multiclass id="ID_WOTC_ERLW_MULTICLASS_ARTIFICER">
 			<prerequisite>Intelligence 13</prerequisite>
-			<requirements>[int:13],!ID_WOTC_UA20190228_CLASS_ARTIFICER,!ID_WOTC_UA20190228_MULTICLASS_ARTIFICER, !ID_WOTC_UA_CLASS_ARTIFICER, !ID_WOTC_UA_MULTICLASS_ARTIFICER</requirements>
+			<requirements>[int:13], !ID_WOTC_UA20190228_CLASS_ARTIFICER, !ID_WOTC_UA20190228_MULTICLASS_ARTIFICER, !ID_WOTC_UA_CLASS_ARTIFICER, !ID_WOTC_UA_MULTICLASS_ARTIFICER, !ID_WOTC_TCOE_CLASS_ARTIFICER</requirements>
 			<setters>
 				<set name="multiclass proficiencies">light armor, medium armor, shields, thieves’ tools, tinker’s tools.</set>
 			</setters>
@@ -229,11 +229,11 @@
 			You can infuse up to {{item infusions:max}} nonmagical objects at the end of a long rest.</description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Artificer Infusion" supports="Artificer Infusion" number="4" level="2" />
-			<select type="Class Feature" name="Artificer Infusion" supports="Artificer Infusion" number="2" level="6" />
-			<select type="Class Feature" name="Artificer Infusion" supports="Artificer Infusion" number="2" level="10" />
-			<select type="Class Feature" name="Artificer Infusion" supports="Artificer Infusion" number="2" level="14" />
-			<select type="Class Feature" name="Artificer Infusion" supports="Artificer Infusion" number="2" level="16" />
+			<select type="Class Feature" name="Artificer Infusion" supports="Artificer Infusion, !TCOE Artificer" number="4" level="2" />
+			<select type="Class Feature" name="Artificer Infusion" supports="Artificer Infusion, !TCOE Artificer" number="2" level="6" />
+			<select type="Class Feature" name="Artificer Infusion" supports="Artificer Infusion, !TCOE Artificer" number="2" level="10" />
+			<select type="Class Feature" name="Artificer Infusion" supports="Artificer Infusion, !TCOE Artificer" number="2" level="14" />
+			<select type="Class Feature" name="Artificer Infusion" supports="Artificer Infusion, !TCOE Artificer" number="2" level="16" />
 
 			<!-- selects for replicate magic items -->
 			<select type="Class Feature" name="Artificer Infusion, Replicate Magic Item" supports="Replicate Magic Item Option" requirements="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM" />
@@ -264,7 +264,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Archetype" name="Artificer Specialist" supports="Artificer Specialist" />
+			<select type="Archetype" name="Artificer Specialist" supports="Artificer Specialist, !TCOE Artificer" />
 		</rules>
 	</element>
 	<element name="The Right Tool for the Job" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_THE_RIGHT_TOOL_FOR_THE_JOB">
@@ -397,7 +397,7 @@
 	</element>
 	
 	<element name="Alchemist" type="Archetype" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_ARCHETYPE_ARTIFICER_ALCHEMIST">
-		<supports>Artificer Specialist</supports>
+		<supports>Artificer Specialist, ERLW Artificer</supports>
 		<description>
 			<p>An Alchemist is an expert at combining reagents to produce mystical effects. Alchemists use their creations to give life and to leech it away. Alchemy is the oldest of artificer traditions, and its versatility has long been valued during times of war and peace.</p>
 			<div element="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ALCHEMIST_TOOL_PROFICIENCY" />
@@ -539,7 +539,7 @@
 	</element>
 
 	<element name="Artillerist" type="Archetype" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_ARCHETYPE_ARTIFICER_ARTILLERIST">
-		<supports>Artificer Specialist</supports>
+		<supports>Artificer Specialist, ERLW Artificer</supports>
 		<description>
 			<p>An Artillerist specializes in using magic to hurl energy, projectiles, and explosions on a battlefield. This destructive power was valued by all the armies of the Last War. Now that the war is over, some members of this specialization have sought to build a more peaceful world by using their powers to fight the resurgence of strife in Khorvaire. The gnome artificer Vi, an unlikely yet key member of House Cannith’s warforged project, has been especially vocal about making things right: "It’s about time we fixed things instead of blowing them all to hell."</p>
 			<div element="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_TOOL_PROFICIENCY" />
@@ -706,7 +706,7 @@
 	</element>
 
 	<element name="Battle Smith" type="Archetype" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_ARCHETYPE_ARTIFICER_BATTLE_SMITH">
-		<supports>Artificer Specialist</supports>
+		<supports>Artificer Specialist, ERLW Artificer</supports>
 		<description>
 			<p>Armies require protection, and someone has to put things back together if defenses fail. A combination of protector and medic, a Battle Smith is an expert at defending others and repairing both material and personnel. To aid in their work, Battle Smiths are usually accompanied by a steel defender, a protective companion of their own creation. Many soldiers tell stories of nearly dying before being saved by a Battle Smith and a steel defender.</p>
 			<p class="indent">Battle Smiths played a key role in House Cannith’s work on battle constructs and the original warforged, and after the Last War, these artificers led efforts to aid those who were injured in the war’s horrific battles.</p>
@@ -854,7 +854,7 @@
 	</element>
 
 	<element name="Steel Defender" type="Companion" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_COMPANION_ARTIFICER_STEEL_DEFENDER">
-		<supports>Steel Defender</supports>
+		<supports>Steel Defender, ERLW Artificer</supports>
 		<description>
 			<p>Your tinkering has borne you a faithful companion, a steel defender. It is friendly to you and your companions, and it obeys your commands.</p>
 			<p><b>Proficiency Bonus (PB)</b> equals your bonus</p>
@@ -936,7 +936,7 @@
 	</element>
 	
 	<element name="Boots of the Winding Path" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_BOOTS_OF_THE_WINDING_PATH">
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<requirements>[level:6]</requirements>
 		<prerequisite>6th-level artificer</prerequisite>
 		<description>
@@ -952,7 +952,7 @@
 		</sheet>
 	</element>
 	<element name="Enhanced Arcane Focus" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_ENHANCED_ARCANE_FOCUS">
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<description>
 			<p><em>Item: A rod, staff, or wand (requires attunement)</em></p>
 			<p>While holding this item, a creature gains a +1 bonus to spell attack rolls. In addition, the creature ignores half cover when making a spell attack.</p>
@@ -967,7 +967,7 @@
 		</sheet>
 	</element>
 	<element name="Enhanced Defense" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_ENHANCED_DEFENSE">
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<description>
 			<p><em>Item: A suit of armor or a shield</em></p>
 			<p>A creature gains a +1 bonus to Armor Class while wearing (armor) or wielding (shield) the infused item.</p>
@@ -983,7 +983,7 @@
 		</sheet>
 	</element>
 	<element name="Enhanced Weapon" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_ENHANCED_WEAPON">
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<description>
 			<p><em>Item: A simple or martial weapon</em></p>
 			<p>This magic weapon grants a +1 bonus to attack and damage rolls made with it.</p>
@@ -999,7 +999,7 @@
 		</sheet>
 	</element>
 	<element name="Homunculus Servant" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_HOMUNCULUS_SERVANT">
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<description>
 			<p><em>Item: A gem or crystal worth at least 100 gp</em></p>
 			<p>You learn intricate methods for magically creating a special homunculus that serves you. The item you infuse serves as the creature’s heart, around which the creature’s body instantly forms.</p>
@@ -1054,7 +1054,7 @@
 		</rules>
 	</element>
 	<element name="Radiant Weapon" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_RADIANT_WEAPON">
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<requirements>[level:6]</requirements>
 		<prerequisite>6th-level artificer</prerequisite>
 		<description>
@@ -1071,7 +1071,7 @@
 		</sheet>
 	</element>
 	<element name="Repeating Shot" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPEATING_SHOT">
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<description>
 			<p><em>Item: A simple or martial weapon with the ammunition property (requires attunement)</em></p>
 			<p>This magic weapon grants a +1 bonus to attack and damage rolls made with it when it’s used to make a ranged attack, and it ignores the loading property if it has it.</p>
@@ -1085,7 +1085,7 @@
 		</sheet>
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM">
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<description>
 			<p>Using this infusion, you replicate a particular magic item. You can learn this infusion multiple times; each time you do so, choose a magic item that you can make with it, picking from the Replicable Items tables below. A table’s title tells you the level you must be in the class to choose an item from the table. Alternatively, you can choose the magic item from among the common magic items in the game, not including potions or scrolls.</p>
 			<p class="indent">In the tables, an item’s entry tells you whether the item requires attunement. See the item’s description in the Dungeon Master’s Guide for more information about it, including the type of object required for its making.</p>
@@ -1097,7 +1097,7 @@
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_2">
 		<compendium display="false" />
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<requirements>ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM</requirements>
 		<description>
 			<p>Using this infusion, you replicate a particular magic item. You can learn this infusion multiple times; each time you do so, choose a magic item that you can make with it, picking from the Replicable Items tables below. A table’s title tells you the level you must be in the class to choose an item from the table. Alternatively, you can choose the magic item from among the common magic items in the game, not including potions or scrolls.</p>
@@ -1110,7 +1110,7 @@
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_3">
 		<compendium display="false" />
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<requirements>ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_2</requirements>
 		<description>
 			<p>Using this infusion, you replicate a particular magic item. You can learn this infusion multiple times; each time you do so, choose a magic item that you can make with it, picking from the Replicable Items tables below. A table’s title tells you the level you must be in the class to choose an item from the table. Alternatively, you can choose the magic item from among the common magic items in the game, not including potions or scrolls.</p>
@@ -1123,7 +1123,7 @@
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_4">
 		<compendium display="false" />
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<requirements>ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_3</requirements>
 		<description>
 			<p>Using this infusion, you replicate a particular magic item. You can learn this infusion multiple times; each time you do so, choose a magic item that you can make with it, picking from the Replicable Items tables below. A table’s title tells you the level you must be in the class to choose an item from the table. Alternatively, you can choose the magic item from among the common magic items in the game, not including potions or scrolls.</p>
@@ -1136,7 +1136,7 @@
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_5">
 		<compendium display="false" />
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<requirements>ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_4</requirements>
 		<description>
 			<p>Using this infusion, you replicate a particular magic item. You can learn this infusion multiple times; each time you do so, choose a magic item that you can make with it, picking from the Replicable Items tables below. A table’s title tells you the level you must be in the class to choose an item from the table. Alternatively, you can choose the magic item from among the common magic items in the game, not including potions or scrolls.</p>
@@ -1149,7 +1149,7 @@
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_6">
 		<compendium display="false" />
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<requirements>ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_5</requirements>
 		<description>
 			<p>Using this infusion, you replicate a particular magic item. You can learn this infusion multiple times; each time you do so, choose a magic item that you can make with it, picking from the Replicable Items tables below. A table’s title tells you the level you must be in the class to choose an item from the table. Alternatively, you can choose the magic item from among the common magic items in the game, not including potions or scrolls.</p>
@@ -1162,7 +1162,7 @@
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_7">
 		<compendium display="false" />
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<requirements>ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_6</requirements>
 		<description>
 			<p>Using this infusion, you replicate a particular magic item. You can learn this infusion multiple times; each time you do so, choose a magic item that you can make with it, picking from the Replicable Items tables below. A table’s title tells you the level you must be in the class to choose an item from the table. Alternatively, you can choose the magic item from among the common magic items in the game, not including potions or scrolls.</p>
@@ -1175,7 +1175,7 @@
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_8">
 		<compendium display="false" />
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<requirements>ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_7</requirements>
 		<description>
 			<p>Using this infusion, you replicate a particular magic item. You can learn this infusion multiple times; each time you do so, choose a magic item that you can make with it, picking from the Replicable Items tables below. A table’s title tells you the level you must be in the class to choose an item from the table. Alternatively, you can choose the magic item from among the common magic items in the game, not including potions or scrolls.</p>
@@ -1188,7 +1188,7 @@
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_9">
 		<compendium display="false" />
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<requirements>ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_8</requirements>
 		<description>
 			<p>Using this infusion, you replicate a particular magic item. You can learn this infusion multiple times; each time you do so, choose a magic item that you can make with it, picking from the Replicable Items tables below. A table’s title tells you the level you must be in the class to choose an item from the table. Alternatively, you can choose the magic item from among the common magic items in the game, not including potions or scrolls.</p>
@@ -1201,7 +1201,7 @@
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_10">
 		<compendium display="false" />
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<requirements>ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_9</requirements>
 		<description>
 			<p>Using this infusion, you replicate a particular magic item. You can learn this infusion multiple times; each time you do so, choose a magic item that you can make with it, picking from the Replicable Items tables below. A table’s title tells you the level you must be in the class to choose an item from the table. Alternatively, you can choose the magic item from among the common magic items in the game, not including potions or scrolls.</p>
@@ -1214,7 +1214,7 @@
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_11">
 		<compendium display="false" />
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<requirements>ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_10</requirements>
 		<description>
 			<p>Using this infusion, you replicate a particular magic item. You can learn this infusion multiple times; each time you do so, choose a magic item that you can make with it, picking from the Replicable Items tables below. A table’s title tells you the level you must be in the class to choose an item from the table. Alternatively, you can choose the magic item from among the common magic items in the game, not including potions or scrolls.</p>
@@ -1227,7 +1227,7 @@
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_12">
 		<compendium display="false" />
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<requirements>ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_11</requirements>
 		<description>
 			<p>Using this infusion, you replicate a particular magic item. You can learn this infusion multiple times; each time you do so, choose a magic item that you can make with it, picking from the Replicable Items tables below. A table’s title tells you the level you must be in the class to choose an item from the table. Alternatively, you can choose the magic item from among the common magic items in the game, not including potions or scrolls.</p>
@@ -1239,7 +1239,7 @@
 		</sheet>
 	</element>
 	<element name="Repulsion Shield" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_REPULSION_SHIELD">
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<requirements>[level:6]</requirements>
 		<prerequisite>6th-level artificer</prerequisite>
 		<description>
@@ -1256,7 +1256,7 @@
 		</sheet>
 	</element>
 	<element name="Resistant Armor" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_RESISTANT_ARMOR">
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<requirements>[level:6]</requirements>
 		<prerequisite>6th-level artificer</prerequisite>
 		<description>
@@ -1271,7 +1271,7 @@
 		</sheet>
 	</element>
 	<element name="Returning Weapon" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_INFUSION_RETURNING_WEAPON">
-		<supports>Artificer Infusion</supports>
+		<supports>Artificer Infusion, ERLW Artificer</supports>
 		<description>
 			<p><em>Item: A simple or martial weapon with the thrown property</em></p>
 			<p>This magic weapon grants a +1 bonus to attack and damage rolls made with it, and it returns to the wielder’s hand immediately after it is used to make a ranged attack.</p>
